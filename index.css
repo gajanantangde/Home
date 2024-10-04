@@ -692,8 +692,123 @@ iframe{
     border-radius: 10px;
     filter: invert(100%);
 }
-   .f-para{
-     display: none;
-   }
-   
+}
+
+#services {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 30px); /* Responsive flex item */
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service {
+        flex: 1 1 calc(45% - 30px);  
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        flex: 1 1 100%; 
+    }
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0; /* Maintain increased padding */
+    text-align: center;
+    font-size: 18px; /* Maintain increased font size */
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between; /* Space out the link sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px; /* Space above the links */
+}
+
+.link-section {
+    flex: 1 1 200px; /* Responsive section width */
+    margin: 10px; /* Margin between sections */
+    text-align: left; /* Align text to the left */
+}
+
+.link-section h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.link-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-section ul li {
+    margin: 5px 0; /* Space between links */
+}
+
+.link-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.link-section a:hover {
+    text-decoration: underline;
+}
+.foot-p {
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Default font size */
+    margin: 10px 0; /* Space around the paragraph */
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .foot-p {
+        font-size: 16px; /* Smaller font size for mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .foot-p {
+        font-size: 14px; /* Even smaller font size for very small screens */
+    }
 }
